@@ -40,6 +40,15 @@ git commit -a -m <"mensagem_desejada">
 	ou
 git commit -am <"mensagem_desejada">
 
+Verificar mudanças não rastreadas (ainda fora do Stage, já tendo sido adicionados inicialmente mas não após uma alteração):
+git diff
+
+Verificar mudanças não rastreadas em um arquivo específico:
+git diff <nome_do_arquivo>
+
+Verificar mudanças rastreadas (já no Stage):
+git diff --staged
+
 Ignorando arquivos e diretórios:
 criar o arquivo ".gitignore" e nele listar o que deverá ser ignorado, no formato (um por linha):
 dir01/
