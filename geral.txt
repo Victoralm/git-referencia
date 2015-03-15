@@ -20,5 +20,7 @@ git log
 Integração com o GitHub (repositório previamente existente localmente)
 - Criar o repositório no GitHub, com o mesmo nome do repositório local
 - Acessar a pasta do repositório local
-- Executar git remote conforme:
+- Executar git remote conforme para adicionar a origem:
 git remote add origin https://github.com/<nome_do_usuário_github>/<nome_do_repositório>.git
+Executar git push inicial para enviar as alterações ao repositório origem:
+git push -u origin master
