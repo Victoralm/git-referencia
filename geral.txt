@@ -24,3 +24,7 @@ Integração com o GitHub (repositório previamente existente localmente)
 git remote add origin https://github.com/<nome_do_usuário_github>/<nome_do_repositório>.git
 Executar git push inicial para enviar as alterações ao repositório origem:
 git push -u origin master
+
+Clonando repositórios (GitHub):
+git clone https://github.com/<nome_do_usuário>/<nome_do_repositório>
+
