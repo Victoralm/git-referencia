@@ -26,6 +26,9 @@ git log --oneline
 Log com muitas informações (usar as setas para navegar pelo log e q para sair):
 git log --stat
 
+Log com vários arqumentos:
+git log -n 3 --oneline --stat
+
 Rastrear todos os arquivos do diretório atual (incluindo subdiretórios):
 git add .
 
