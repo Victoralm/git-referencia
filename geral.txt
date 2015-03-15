@@ -1,0 +1,24 @@
+Iniciar (criar) repositório Git:
+git init
+
+Rastrear arquivos no diretório Git:
+git add <nome_do_arquivo>
+
+Verificar estado do repositório:
+git status
+
+Gravando arquivo no repositório (tem de ter as áspas na mensagem):
+git commit -m <"mensagem_desejada">
+
+A cada nova modificação no arquivo, executar:
+git add <nome_do_arquivo>
+git commit -m <"mensagem_desejada">
+
+Verificar alterações realizadas:
+git log
+
+Integração com o GitHub (repositório previamente existente localmente)
+- Criar o repositório no GitHub, com o mesmo nome do repositório local
+- Acessar a pasta do repositório local
+- Executar git remote conforme:
+git remote add origin https://github.com/<nome_do_usuário_github>/<nome_do_repositório>.git
