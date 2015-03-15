@@ -17,11 +17,25 @@ git commit -m <"mensagem_desejada">
 Verificar alterações realizadas:
 git log
 
+Verificando somente os 3 últimos commits:
+git log -n 3
+
+Mínimo de informações no log:
+git log --oneline
+
+Log com muitas informações (usar as setas para navegar pelo log e q para sair):
+git log --stat
+
 Rastrear todos os arquivos do diretório atual (incluindo subdiretórios):
 git add .
 
 Rastrear um diretório e todos os arquivos contidos nele:
 git add <nome_do_diretório>
+
+Rastrear e commitar no mesmo comando:
+git commit -a -m <"mensagem_desejada">
+	ou
+git commit -am <"mensagem_desejada">
 
 Ignorando arquivos e diretórios:
 criar o arquivo ".gitignore" e nele listar o que deverá ser ignorado, no formato (um por linha):
