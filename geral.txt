@@ -4,7 +4,7 @@ git init
 Rastrear arquivos no diretório Git:
 git add <nome_do_arquivo>
 
-Verificar estado do repositório:
+Verificar estado (área de Stage) do repositório:
 git status
 
 Gravando arquivo no repositório (tem de ter as áspas na mensagem):
@@ -14,7 +14,7 @@ A cada nova modificação no arquivo, executar:
 git add <nome_do_arquivo>
 git commit -m <"mensagem_desejada">
 
-Verificar alterações realizadas:
+Verificar alterações realizadas (área de commits):
 git log
 
 Verificando somente os 3 últimos commits:
