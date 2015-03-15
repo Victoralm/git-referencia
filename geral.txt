@@ -28,3 +28,18 @@ git push -u origin master
 Clonando repositórios (GitHub):
 git clone https://github.com/<nome_do_usuário>/<nome_do_repositório>
 
+Rastrear todos os arquivos do diretório atual (incluindo subdiretórios - acho q ñ rastreia arquivos ocultos):
+git add .
+
+Rastrear um diretório e todos os arquivos contidos nele:
+git add <nome_do_diretório>
+
+Ignorando arquivos e diretórios:
+criar o arquivo ".gitignore" e nele listar o que deverá ser ignorado, no formato (um por linha):
+dir01/
+dir07/
+arq03.txt
+arq19.html
+
+
+
