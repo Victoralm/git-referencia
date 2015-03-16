@@ -49,6 +49,22 @@ git diff <nome_do_arquivo>
 Verificar mudanças rastreadas (já no Stage):
 git diff --staged
 
+Exibir mudanças dentro e fora do Stage:
+pegar o código do último commit com git log.
+Ex: git log -n 1 --oneline
+Tem-se a saída: <N°_do_código_do_commit> <Mensagem_do_commit>
+EX: 84d3245 Inserido um arquivo qualquer
+Pegar o código e usar no git diff.
+Ex: git diff 84d3245
+
+Exibir diferença entre commits (do commit x até o commit y):
+git diff <N°_do_código_do_commit>..<N°_do_código_do_commit>
+Ex: git diff 84d3245..f5b75eb
+
+Exibir as mudanças entre o commit x e os dois anteriores a ele (exibe as alterações commitadas e não-commitadas):
+git diff <N°_do_código_do_commit>~2
+git diff 84d3245~2
+
 Ignorando arquivos e diretórios:
 criar o arquivo ".gitignore" e nele listar o que deverá ser ignorado, no formato (um por linha):
 dir01/
@@ -57,6 +73,9 @@ arq03.txt
 arq19.html
 *.bk (todos os arquivos com extenção bk)
 backups/*.bk (todos os arquivos com extenção bk que estejam dentro do diretório backups)
+
+Remover arquivos do repositório:
+git rm <nome_do_arquivo>
 
 Integração com o GitHub (repositório previamente existente localmente)
 - Criar o repositório no GitHub, com o mesmo nome do repositório local
