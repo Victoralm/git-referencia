@@ -77,6 +77,79 @@ backups/*.bk (todos os arquivos com extenção bk que estejam dentro do diretór
 Remover arquivos do repositório:
 git rm <nome_do_arquivo>
 
+Renomear e Mover arquivos do repositório:
+Renomear: git mv <nome_do_arquivo_original> <nome_do_arquivo_destino>
+E: git mv sb.css sidebar.css
+Mover (criar o diretório antes): git mv <nome_do_arquivo_original> <nome_do_diretório_destino>/<nome_do_arquivo_destino>
+Ex: git mv sb.css css/sidebar.css
+
+Desfazer modificação não-rastreada (fora do Stage):
+git checkout -- <nome_do_arquivo>
+
+Desfazer modificação rastreada (já no Stage):
+- Retira do Stage mantendo as modificações:
+git reset -- <nome_do_arquivo>
+- Retira do Stage desfazendo as modificações:
+git reset --hard
+
+Alterando o último commit:
+- Pode-se modificar apenas a mensagem, desde que logo após o commit use-se o comando sem executar nenhuma modificação/adição/remoção:
+git commit --amend
+- Pode-se adicionar uma modificação esquecida ao último commit, desde que logo após o commit use-se os commandos:
+git add <nome_do_arquivo>
+$ git commit --amend
+
+Desfazendo um commit:
+- Sem edição da mensagem:
+git revert --no-edit <Nº_do_código_do_commit>
+- Editando a mensagem:
+git revert <Nº_do_código_do_commit>
+- Especificamente o último commit:
+git revert --no-edit HEAD
+	ou
+git revert HEAD
+- Usando o 
+
+
+
+Repositórios remotos
+
+Criar um repositório remoto (no PC servidor):
+git init --bare <nome_do_repositporio>.git
+
+Adicionar um repositório remoto (no PC cliente - sendo possível adicionar mais de um, desde que cada possua um nome difderente):
+git remote add <nome_para_o_repositório> <protocolo>://<ip_do_pc_servidor>/<caminho_completo_para_o_repositório>
+Ex (protocolo: local):
+git remote add servidor file://192.168.0.107/home/victoralm/projetos_git/moveis-ecologicos.git
+Ex: (protocolo: ssh):
+git remote add servidor ssh://fulano@192.168.0.107:78965/home/victoralm/projetos_git/moveis-ecologicos.git
+
+Listar repositórios remotos:
+- Exibir apenas o nome:
+git remote
+- Exibir nome e endereço
+git remote -v
+
+Alterar nome do repositório remoto:
+git remote rename <nome_original> <nome_novo>
+
+Alterar endereço do repositório remoto:
+git remote set-url <nome_do_repositório>
+
+Enviando commits para o repositório remoto:
+git push <nome_do_repositório> master
+
+Clonar repositórios remotos:
+git clone <protocolo>://<ip_do_pc_servidor>/<caminho_completo_para_o_repositório>
+Ex (protocolo: local):
+git clone file://192.168.0.107/home/victoralm/projetos_git/moveis-ecologicos.git
+Ex (protocolo: ssh):
+git clone ssh://fulano@192.168.0.107:78965/home/victoralm/projetos_git/moveis-ecologicos.git
+
+Sincronizando o repositório local com o remoto:
+git pull <nome_do_repositório> master
+
+
 Integração com o GitHub (repositório previamente existente localmente)
 - Criar o repositório no GitHub, com o mesmo nome do repositório local
 - Acessar a pasta do repositório local
