@@ -165,9 +165,10 @@ git clone https://github.com/<nome_do_usuário>/<nome_do_repositório>
 #################### Exemplo ####################
 ## Servidor Linux na rede local, servindo diretório(s) via Samba. Este(s) diretório(s) previamente mapeados como unidades de rede.
 ## No diretório desejado no servidor :
-	git init --bare <nome_desejado_para_o_repositporio>
+	git init --bare <nome_desejado_para_o_repositorio>
 	Como em:
 		git init --bare JavaInicial
+		
 ## Na máquina Windows, já com a unidade de rede mapeada, com o shell aberto no local desejado:
 	git clone <endereço_do_repositporio_desejado>
 	Como em (Atenção com a direção das barras):
