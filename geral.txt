@@ -176,6 +176,7 @@ git clone https://github.com/<nome_do_usuário>/<nome_do_repositório>
 ## Criando o commit inicial:
 	git add .
 	git commit -am "Inicializando o repositório"
+	git push origin master
 #################################################
 
 
