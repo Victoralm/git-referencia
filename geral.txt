@@ -134,7 +134,7 @@ Alterar nome do repositório remoto:
 git remote rename <nome_original> <nome_novo>
 
 Alterar endereço do repositório remoto:
-git remote set-url <nome_do_repositório>
+git remote set-url <nome_do_repositório> <novo_endereço_para_o_repositório>
 
 Enviando commits para o repositório remoto:
 git push <nome_do_repositório> master
