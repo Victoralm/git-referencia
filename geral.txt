@@ -179,5 +179,24 @@ git clone https://github.com/<nome_do_usuário>/<nome_do_repositório>
 	git push origin master
 #################################################
 
+Criando branches no repositório:
+https://confluence.atlassian.com/bitbucket/branching-a-repository-223217999.html#BranchingaRepository-CreateaGitbranch
 
+## Checando o branch atual:
+	git branch
 
+## Criando um novo branch no repositório:
+	git branch <nome_para_o_branch>
+
+## Entrando no novo branch:
+	git checkout <nome_do_branch>
+
+## Adicionando as alterações ao noivo branch:
+	git add . 
+	git commit -m "mensagem_para_o_novo_branch"
+
+## Retornando ao branch principal:
+	git checkout master
+
+## Subindo o conteúdo de um branch específico:
+	git push origin <nome_do_branch>
