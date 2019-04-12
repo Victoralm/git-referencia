@@ -283,7 +283,8 @@
     ```
 
 <br>
-_____________________________________<br>
+_____________________________________
+<br>
 #################### Exemplo ####################
 
 ### Servidor Linux na rede local, servindo diretório(s) via Samba. Este(s) diretório(s) previamente mapeados como unidades de rede.
