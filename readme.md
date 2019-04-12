@@ -28,31 +28,6 @@
     git commit -m <"mensagem_desejada">
     ```
 
-- Verificar alterações realizadas (área de commits):
-    ```bash
-    git log
-    ```
-
-- Verificando somente os 3 últimos commits:
-    ```bash
-    git log -n 3
-    ```
-
-- Mínimo de informações no log:
-    ```bash
-    git log --oneline
-    ```
-
-- Log com muitas informações (usar as setas para navegar pelo log e q para sair):
-    ```bash
-    git log --stat
-    ```
-
-- Log com múltiplos argumentos:
-    ```bash
-    git log -n 3 --oneline --stat
-    ```
-
 - Rastrear todos os arquivos do diretório atual (incluindo subdiretórios):
     ```bash
     git add .
@@ -70,6 +45,35 @@
     git commit -am <"mensagem_desejada">
     ```
 
+<br>
+
+#### Verificando alterações no repositório
+
+- Verificar alterações realizadas (área de commits):
+    ```bash
+    git log
+    ```
+
+- Verificando somente os 3 últimos commits:
+    ```bash
+    git log -n 3
+    ```
+
+- Mínimo de informações no log:
+    ```bash
+    git log --oneline
+    ```
+
+- Log com muitas informações (usar as "setas" para navegar pelo log e "q" para sair):
+    ```bash
+    git log --stat
+    ```
+
+- Log com múltiplos argumentos:
+    ```bash
+    git log -n 3 --oneline --stat
+    ```
+
 - Verificar mudanças não rastreadas (ainda fora do Stage, já tendo sido adicionados inicialmente mas não após uma alteração):
     ```bash
     git diff
@@ -84,6 +88,42 @@
     ```bash
     git diff --staged
     ```
+
+<br>
+
+#### Renomear e Mover arquivos do repositório
+
+- Renomear
+    ```bash
+    git mv <nome_do_arquivo_original> <nome_do_arquivo_destino>
+    // Ex: git mv sb.css sidebar.css
+    ```
+
+- Mover (criar o diretório antes):
+    ```bash
+    git mv <nome_do_arquivo_original> <nome_do_diretório_destino>/<nome_do_arquivo_destino>
+    Ex: git mv sb.css css/sidebar.css
+    ```
+
+- Desfazer modificação não-rastreada (fora do Stage):
+    ```bash
+    git checkout -- <nome_do_arquivo>
+    ```
+
+<br>
+
+#### Desfazer modificação rastreada (já no Stage)
+
+- Retira do Stage mantendo as modificações:
+    ```bash
+    git reset -- <nome_do_arquivo>
+    ```
+- Retira do Stage desfazendo as modificações:
+    ```bash
+    git reset --hard
+    ```
+
+<br>
 
 #### Exibir mudanças dentro e fora do Stage
 
@@ -108,6 +148,8 @@
     git diff 84d3245~2
     ```
 
+<br>
+
 #### Ignorando arquivos e diretórios
 
 - Criar o arquivo ".gitignore" e nele listar o que deverá ser ignorado, no formato (um por linha):
@@ -125,35 +167,7 @@
     git rm <nome_do_arquivo>
     ```
 
-#### Renomear e Mover arquivos do repositório
-
-- Renomear
-    ```bash
-    git mv <nome_do_arquivo_original> <nome_do_arquivo_destino>
-    // Ex: git mv sb.css sidebar.css
-    ```
-
-- Mover (criar o diretório antes):
-    ```bash
-    git mv <nome_do_arquivo_original> <nome_do_diretório_destino>/<nome_do_arquivo_destino>
-    Ex: git mv sb.css css/sidebar.css
-    ```
-
-- Desfazer modificação não-rastreada (fora do Stage):
-    ```bash
-    git checkout -- <nome_do_arquivo>
-    ```
-
-#### Desfazer modificação rastreada (já no Stage)
-
-- Retira do Stage mantendo as modificações:
-    ```bash
-    git reset -- <nome_do_arquivo>
-    ```
-- Retira do Stage desfazendo as modificações:
-    ```bash
-    git reset --hard
-    ```
+<br>
 
 #### Alterando o último commit
 
@@ -167,6 +181,8 @@
     git add <nome_do_arquivo>
     git commit --amend
     ```
+
+<br>
 
 #### Desfazendo um commit
 
@@ -203,6 +219,8 @@
     // Ex: (protocolo: ssh):
     // git remote add servidor ssh://fulano@192.168.0.107:78965/home/victoralm/projetos_git/moveis-ecologicos.git
 
+<br>
+
 #### Listar repositórios remotos
 - Exibir apenas o nome:
     ```bash
@@ -212,6 +230,8 @@
     ```bash
     git remote -v
     ```
+
+<br>
 
 - Alterar nome do repositório remoto:
     ```bash
@@ -261,8 +281,8 @@
     ```bash
     git clone https://github.com/<nome_do_usuário>/<nome_do_repositório>
     ```
-<br>
 
+<br>
 _____________________________________
 #################### Exemplo ####################
 
@@ -289,6 +309,9 @@ _____________________________________
     ```
 
 _____________________________________
+
+<br>
+
 
 ### Criando branches no repositório
 
