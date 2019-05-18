@@ -363,6 +363,11 @@ _____________________________________
     git checkout <branch_destino> -- <nome_do_arquivo>  # Enviar o arquivo desejado ao branch em questão
     ```
 
+- Checando a diferença entre dois branches ([fonte](https://stackoverflow.com/a/9834872/3488156)):
+    ```bash
+    git diff <branch_1>..<branch_2>
+    ```
+
 - Mesclando alterações de um branch para o branch master ([fonte](https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge)):
     ```bash
     git checkout master  # Voltar para o branch **master**
