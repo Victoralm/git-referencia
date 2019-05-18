@@ -363,7 +363,7 @@ _____________________________________
     git checkout <branch_destino> -- <nome_do_arquivo>  # Enviar o arquivo desejado ao branch em questão
     ```
 
-- Mesclando alterações de um branch para o branch master ([fonte](https://stackoverflow.com/a/2364223/3488156)):
+- Mesclando alterações de um branch para o branch master ([fonte](https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge)):
     ```bash
     git checkout master  # Voltar para o branch **master**
     git merge <branch_a_ser_mesclado_ao_master>  # Mescla o conteúdo do branch em questão ao ramo (branch) **master**
