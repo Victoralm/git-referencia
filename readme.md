@@ -351,3 +351,9 @@ _____________________________________
     ```bash
     git push origin <nome_do_branch>
     ```
+    
+- Copiando arquivos de um repositório para o outro ([fonte](https://stackoverflow.com/a/2364223/3488156)):
+    ```bash
+    git checkout <branch_origem>  # Voltar para o branch onde se encontra o arquivo
+    git checkout <branch_destino> -- <nome_do_arquivo>  # Enviar o arquivo desejado ao branch em questão
+    ```
