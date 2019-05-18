@@ -335,6 +335,11 @@ _____________________________________
     ```bash
     git checkout <nome_do_branch>
     ```
+    
+- Criando e entrando no novo branch ao msm tempo - opção *-b* ([fonte](https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge)):
+    ```bash
+    git checkout -b <nome_do_branch>
+    ```
 
 - Adicionando as alterações ao novo branch:
     ```bash
@@ -357,9 +362,15 @@ _____________________________________
     git checkout <branch_origem>  # Voltar para o branch onde se encontra o arquivo
     git checkout <branch_destino> -- <nome_do_arquivo>  # Enviar o arquivo desejado ao branch em questão
     ```
+
+- Mesclando alterações de um branch para o branch master ([fonte](https://stackoverflow.com/a/2364223/3488156)):
+    ```bash
+    git checkout master  # Voltar para o branch **master**
+    git merge <branch_a_ser_mesclado_ao_master>  # Mescla o conteúdo do branch em questão ao ramo (branch) **master**
+    ```
     
 - Deletando um branch ([fonte](https://stackoverflow.com/a/2003515/3488156)):
     ```bash
-    git branch -d <nome_do_branch>  # Deleta o branch LOCAL, somente se seu conteúdo já tiver sido fundido ao ramo (branch) principal
-    git branch -D <nome_do_branch>  # Deleta o branch LOCAL, independentemente de seu conteúdo já tiver sido fundido ao ramo (branch) principal
+    git branch -d <nome_do_branch>  # Deleta o branch LOCAL, somente se seu conteúdo já tiver sido mesclado ao ramo (branch) principal
+    git branch -D <nome_do_branch>  # Deleta o branch LOCAL, independentemente de seu conteúdo já tiver sido mesclado ao ramo (branch) principal
     ```
