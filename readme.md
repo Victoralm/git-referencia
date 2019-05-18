@@ -336,7 +336,7 @@ _____________________________________
     git checkout <nome_do_branch>
     ```
 
-- Adicionando as alterações ao noivo branch:
+- Adicionando as alterações ao novo branch:
     ```bash
     git add . 
 	git commit -m "mensagem_para_o_novo_branch"
@@ -352,8 +352,14 @@ _____________________________________
     git push origin <nome_do_branch>
     ```
     
-- Copiando arquivos de um repositório para o outro ([fonte](https://stackoverflow.com/a/2364223/3488156)):
+- Copiando arquivos de um branch para o outro ([fonte](https://stackoverflow.com/a/2364223/3488156)):
     ```bash
     git checkout <branch_origem>  # Voltar para o branch onde se encontra o arquivo
     git checkout <branch_destino> -- <nome_do_arquivo>  # Enviar o arquivo desejado ao branch em questão
+    ```
+    
+- Deletando um branch ([fonte](https://stackoverflow.com/a/2003515/3488156)):
+    ```bash
+    git branch -d <nome_do_branch>  # Deleta o branch LOCAL, somente se seu conteúdo já tiver sido fundido ao ramo (branch) principal
+    git branch -D <nome_do_branch>  # Deleta o branch LOCAL, independentemente de seu conteúdo já tiver sido fundido ao ramo (branch) principal
     ```
