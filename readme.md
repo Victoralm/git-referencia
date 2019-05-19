@@ -379,3 +379,17 @@ _____________________________________
     git branch -d <nome_do_branch>  # Deleta o branch LOCAL, somente se seu conteúdo já tiver sido mesclado ao ramo (branch) principal
     git branch -D <nome_do_branch>  # Deleta o branch LOCAL, independentemente de seu conteúdo já tiver sido mesclado ao ramo (branch) principal
     ```
+    
+    - Criando tags para marcar uma etapa do desenvolvimento ([fonte](https://git-scm.com/book/en/v2/Git-Basics-Tagging)):
+    ```bash
+    git tag -a v1.4 -m "my version 1.4"  # Cria a tag "v1.4" tag com uma msg
+    git tag  # Exibe as tags disponíveis
+    git show v1.4  # Exibe a tag "v1.4"
+    git push origin v1.4  # Sobe a tag "v1.4" para o repositório remoto
+    ```
+
+- Deletando tags ([fonte](https://git-scm.com/book/en/v2/Git-Basics-Tagging)):
+    ```bash
+    git tag -d v1.4 -m "my version 1.4"  # Deleta a tag "v1.4"
+    git push origin --delete v1.4  # Deleta a tag "v1.4" do repositório remoto
+    ```
