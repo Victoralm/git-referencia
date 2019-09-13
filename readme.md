@@ -336,7 +336,7 @@ _____________________________________
     git checkout <nome_do_branch>
     ```
     
-- Criando e entrando no novo branch ao msm tempo - opção *-b* ([fonte](https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge)):
+- Criando e entrando no novo branch ao msm tempo - opção *-b* ([fonte](https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge#Branch-B%C3%A1sico)):
     ```bash
     git checkout -b <nome_do_branch>
     ```
@@ -368,7 +368,7 @@ _____________________________________
     git diff <branch_1>..<branch_2>
     ```
 
-- Mesclando alterações de um branch para o branch master ([fonte](https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge)):
+- Mesclando alterações de um branch para o branch master ([fonte](https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge#Merge-B%C3%A1sico)):
     ```bash
     git checkout master  # Voltar para o branch **master**
     git merge <branch_a_ser_mesclado_ao_master>  # Mescla o conteúdo do branch em questão ao ramo (branch) **master**
@@ -380,7 +380,7 @@ _____________________________________
     git branch -D <nome_do_branch>  # Deleta o branch LOCAL, independentemente de seu conteúdo já tiver sido mesclado ao ramo (branch) principal
     ```
 
-- Criando tags para marcar uma etapa do desenvolvimento ([fonte](https://git-scm.com/book/en/v2/Git-Basics-Tagging)):
+- Criando tags para marcar uma etapa do desenvolvimento ([fonte](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_creating_tags)):
     ```bash
     git tag -a v1.4 -m "my version 1.4"  # Cria a tag "v1.4" tag com uma msg
     git tag  # Exibe as tags disponíveis
@@ -388,8 +388,8 @@ _____________________________________
     git push origin v1.4  # Sobe a tag "v1.4" para o repositório remoto
     ```
 
-- Deletando tags ([fonte](https://git-scm.com/book/en/v2/Git-Basics-Tagging)):
+- Deletando tags ([fonte](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_deleting_tags)):
     ```bash
-    git tag -d v1.4 -m "my version 1.4"  # Deleta a tag "v1.4"
+    git tag -d v1.4  # Deleta a tag "v1.4"
     git push origin --delete v1.4  # Deleta a tag "v1.4" do repositório remoto
     ```
