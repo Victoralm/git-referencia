@@ -176,7 +176,7 @@
     git commit --amend
     ```
 
-- Pode-se adicionar uma modificação esquecida ao último commit, desde que logo após o commit use-se os commandos:
+- Pode-se adicionar uma modificação esquecida ao último commit, desde que logo após o commit use-se os commandos ([fonte](https://git-scm.com/book/pt-br/v1/Git-Essencial-Desfazendo-Coisas#Modificando-Seu-%C3%9Altimo-Commit)):
     ```bash
     git add <nome_do_arquivo>
     git commit --amend
