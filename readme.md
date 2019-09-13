@@ -390,6 +390,6 @@ _____________________________________
 
 - Deletando tags ([fonte](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_deleting_tags)):
     ```bash
-    git tag -d v1.4  # Deleta a tag "v1.4"
+    git tag -d v1.4 # Deleta a tag "v1.4" do repositório local
     git push origin --delete v1.4  # Deleta a tag "v1.4" do repositório remoto
     ```
