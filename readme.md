@@ -182,6 +182,12 @@
     git commit --amend
     ```
 
+- Pode-se reverter as alterações de um arquivo, retornando-o ao estado do último commit ([fonte](https://git-scm.com/book/pt-br/v1/Git-Essencial-Desfazendo-Coisas#Desfazendo-um-Arquivo-Modificado)):
+  - Essa alteração é permanente e todas as mudanças no arquivo, feitas após o commit, serão perdidas. Usar com atenção...
+    ```bash
+    git checkout -- <nome_do_arquivo>
+    ```
+
 <br>
 
 #### Desfazendo um commit
